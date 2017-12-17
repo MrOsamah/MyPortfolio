@@ -8,15 +8,15 @@ body {
   font-size: 2.5em;
 }
 
-.featurette-divider {
+.container .featurette-divider {
   margin: 5rem 0;
 }
 
-.featurette-divider:first-of-type {
+.container .featurette-divider:first-of-type {
   margin-top: 2.2em;
 }
 
-.featurette-divider:last-of-type {
+.container .featurette-divider:last-of-type {
   margin-bottom: 2.2em;
 }
 
@@ -50,8 +50,8 @@ footer a:hover {
 }
 
 @media (max-width: 575px) {
-  .featurette-divider {
+  .container .featurette-divider {
     margin-top: 1.2rem;
-    margin-bottom: 1.2rem; 
+    margin-bottom: 1.2rem;
   }
 }
