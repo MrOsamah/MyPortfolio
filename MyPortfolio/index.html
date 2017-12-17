@@ -5,14 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
   <title>MrOsamah</title>
 </head>
 <body>
-  <div class="container">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a href="#" class="navbar-brand">MrOsamah</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-envelope mr-1"></i>
+              Contact Me
+              <!--TODO: Popup contact form  -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="http://mrosamah.com/blog/" target="_blank" class="nav-link">
+              <i class="fab fa-wordpress mr-1"></i>
+              Blog
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid first-bg text-center">
+    <div class="row justify-content-center">
+      <div class="col-8 mt-2 py-4" id="logoDev">
+        <img src="img\WhiteLogo.png" alt="Mr. Osamah's Logo" class="img-fluid logo">
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-content">
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-sm-7 mb-2 pt-3">
+        <h2 class="featurette-heading">When <strong><span class="text-danger">creativity</span></strong> isn't an option<strong>,</strong> <span class="text-muted">better call Osamah<strong>!</strong></span></h2>
+        <p class="lead">"Creative content is critical to stand out in the screaming noise distracting your audience." - Stephanie Stahl</p>
+      </div>
+      <div class="col-sm-5">
+        <img src="img\creative-large.jpg" srcset="img\creative-large.jpg 1x, img\creative-small.jpg 2x" alt="Man drawing in a cool looking note" class="featurette-image img-fluid mx-auto rounded">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-sm-7 mb-2 pt-3 order-sm-2">
+        <h2 class="featurette-heading">Web Developer <strong><span class="text-danger">+</span></strong> Graphic Designer. <span class="text-muted">And more..</span></h2>
+        <p class="lead">I am proud to say that I spent more than 10 years with <strong><span class="text-info">Photoshop</span></strong>. My web experince started from editing <strong><span class="text-warning">Blogger</span></strong> templates 4 years ago, and now I am taking Udacity's Front-End Developer nanodegree, and I intened to take the full stack web developer nanodegree after that. I love what I am doing, and I am ready to learn what I must do next.</p>
+        <h3 class="featurette-heading">Check my <a href="https://github.com/MrOsamah" target="_blank"><i class="fab fa-github"></i> GitHub</a>.</h3>
+        <h3 class="featurette-heading">Check my <a href="https://www.behance.net/mrosamah" target="_blank"><i class="fab fa-behance"></i> Behance</a>.</h3>
+        <h3 class="featurette-heading">Check my <a href="https://www.linkedin.com/in/mrosamah/" target="_blank"><i class="fab fa-linkedin-in"></i> Linkedin</a>.</h3>
+      </div>
+      <div class="col-sm-5 order-sm-1 mx-auto">
+        <div class="row">
+          <div class="col-sm-10">
+            <img src="img\write-code-large.jpg" srcset="img\write-code-large.jpg 1x, img\write-code-small.jpg 2x" alt="HTML code" class="featurette-image img-fluid rounded my-1">
+          </div>
+          <div class="col-sm-10">
+            <img src="img\graphic-design-large.jpg" srcset="img\graphic-design-large.jpg 1x, img\graphic-design-small.jpg 2x" alt="Photoshop and Illustrator like pencil and brush" class="featurette-image img-fluid rounded my-1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette mb-3">
+      <div class="col-sm-7 mb-2 pt-3">
+        <h2 class="featurette-heading">And there is <span class="text-danger">more</span><strong>,</strong><br><span class="text-muted"</span>other <strong>things</strong> to mention.</h2>
+        <p class="lead">I can create and perform good <strong>Arabic</strong> content, either on stages or theaters, virtual or physical, you name it.</p>
+      </div>
+      <div class="col-sm-5">
+        <img src="img\stage-large.jpg" srcset="img\stage-large.jpg 1x, img\stage-small.jpg 2x" alt="Man explain on stage" class="img-fluid featurette-image rounded mx-auto">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
 
   </div>
+  <footer class="container-fluid text-light text-center">
+    <div class="row">
+      <div class="col">
+        <p><small>© 2017 MrOsamah<br>Built with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>. Icons from <a href="https://fontawesome.com" target="_blank">Font Awesome</a>.<br> Photos by
+        <a href="https://unsplash.com/@stickermule" target="_blank">Sticker Mule</a>, <a href="https://unsplash.com/@_imkiran" target="_blank">Sai Kiran Anagani</a>, <a href="https://unsplash.com/@alicegrace" target="_blank">Alice Achterhof</a>, <a href="https://unsplash.com/@xteemu" target="_blank">Teemu Paananen</a> from <a href="https://unsplash.com/" target="_blank">Unsplash</a>.</small></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
